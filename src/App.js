@@ -30,25 +30,23 @@ const recipes = [
     }
 ];
 
-class App extends React.Component {
-    render() {
-        return (
+function App() {
+    return (
+        <div className="body">
+          <header>Matt and Maya Cook</header>
+          {recipes.map(recipe => (
             <div>
-              <header>Matt and Maya Cook</header>
-              {recipes.map(recipe => (
-                <div>
-                  <br />
-                  <date>{recipe.date}</date>
-                  <br />
-                  <name>{recipe.name}</name>
-                  <br />
-                  <img src={`${process.env.PUBLIC_URL}/assets/images/${recipe.image}.jpg`} />
-                  <br />
-                </div>
-              ))}
+              <br />
+              <date>{recipe.date}</date>
+              <br />
+              <name>{recipe.name}</name>
+              <br />
+              <img src={`${process.env.PUBLIC_URL}/assets/images/${recipe.image}.jpg`} />
+              <br />
             </div>
-        );
-    }
+          ))}
+        </div>
+    );
 }
 
 export default App
