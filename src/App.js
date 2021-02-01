@@ -98,14 +98,13 @@ const meals = [
 function Meal(props) {
    return (
      <div>
-          {props.courses.map(recipe => (
+         {props.courses.map(course=> (
             <div>
               <br />
-              <date>{recipe.date}</date>
+              <name>{course.name}</name>
               <br />
-              <name>{recipe.name}</name>
               <br />
-              <img src={`${process.env.PUBLIC_URL}/assets/images/${recipe.image}.jpg`} />
+              <img src={`${process.env.PUBLIC_URL}/assets/images/${course.image}.jpg`} />
               <br />
             </div>
           ))}
@@ -117,9 +116,12 @@ function App() {
     return (
         <div className="body">
           <header>Matt and Maya Cook</header>
-          {meals.map(courses => (
+          {meals.map(meal => (
             <div>
-                <Meal courses={courses}/>
+             <br />
+             <br />
+            <date>{meal.date}</date>
+            <Meal courses={meal.courses} />
             </div>
           ))}
         </div>
