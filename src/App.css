@@ -14,6 +14,10 @@ date {
     font-size: 110%;
 }
 
+name {
+    font-family: "Lucida Handwriting", cursive;
+}
+
 img {
     height: 500px;
     width: auto;
