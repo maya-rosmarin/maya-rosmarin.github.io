@@ -104,7 +104,7 @@ const meals = [
     courses: [
         {
             name: "Lavender Duck with Roasted Carrots and Sumac Cream and Pickled Daikon",
-            image: "lavender_duck",
+            image: "lavender_duck_carrots",
         },
     ],
   }
