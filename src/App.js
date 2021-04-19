@@ -107,7 +107,24 @@ const meals = [
             image: "lavender_duck_carrots",
         },
     ],
-  }
+  },
+  {
+    date: "November 26th, 2019",
+    courses: [
+         {
+          name: "Artichokes Barigoule",
+          image: "artichokes_barigoule",
+         },
+         {
+          name: "Roulade of Pekin Duck Breast with Creamed Sweet White Corn and Morel Mushroom Sauce",
+          image: "duck_morel",
+         },
+         {
+          name: "Rhubarb Confit with Navel Oranges, Candied Fennel, and Mascarpone Sorbet",
+          image: "rhubarb_confit",
+         }
+    ],
+  },
 ];
 
 function Meal(props) {
