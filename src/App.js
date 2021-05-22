@@ -184,7 +184,7 @@ function Meal(props) {
               <br />
               <name>{course.name}</name>
               <br />
-              <img src={`${process.env.PUBLIC_URL}/assets/images/${course.image}.jpg`} />
+              <img src={`${process.env.PUBLIC_URL}/assets/images/${course.image}.jpg`} loading="lazy" />
             </div>
           ))}
      <br />
