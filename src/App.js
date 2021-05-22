@@ -1,10 +1,59 @@
 import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Divider from '@material-ui/core/Divider';
 
 import './App.css'
 
 const meals = [
+  {
+    date: "May 21st, 2021",
+    courses: [
+        {
+            name: "Salade Verte - Cured Cucumber and Fennel, Avocado Mousse, Sunflower Sprouts, Yuzu Powder, Kiwi-Yuzu Condiment",
+            image: "salade_verte",
+        },
+        {
+            name: "Salade Rouge - Ruby Beets, Beet Juice Poached Brussels Sprouts, Hibiscus Poached Apples, Pickled Red Onion, Pickled Beet Puree, Honey Poached Cranberries, Red Quinoa",
+            image: "salade_rouge",
+        },
+        {
+            name: "Cured Yellowtail with Green Apple Vierge - Pickled Apricots, Apple Parisiennes, Dill Oil",
+            image: "yellowtail_cured",
+        },
+        {
+            name: "Fava Bean Agnolotti with Curry Emulsion and Garlic Chives",
+            image: "fava_bean_agnolotti",
+        },
+        {
+            name: "Paupiettes of Dover Sole - Lobster Mousse, Satsuma Mandarins, Saffron-Orange Butter, Brown Butter Sunchoke Purée",
+            image: "dover_sole_saffron",
+        },
+        {
+            name: "Treacle Tart - Green Apples, Rosemary Scented Yogurt, Pie Crust",
+            image: "treacle_tart",
+        },
+        {
+            name: "Gateau Opera - Caramelized Oyster Crackers, Candied Lemon, Bitter Almond Gel, Silver Leaf",
+            image: "gateau_opera",
+        },
+    ],
+  },
+  {
+    date: "April 1st, 2021",
+    courses: [
+        {
+            name: "Pecorino Toscano with Roasted Sweet Peppers, Arugula Coulis, Balsamic Reduction",
+            image: "pecorino_crostini",
+        },
+        {
+            name: "Dungeness Crab Salad with Cucumber Dill Jelly, Grainy Mustard Vinaigrette, and Arugula",
+            image: "dungeness_crab_salad",
+        },
+        {
+            name: "Pineapple Chop - Oven-Roasted Pineapple with Fried Pastry Cream and Caramel Sauce",
+            image: "pineapple_chop",
+        },
+    ],
+  },
   {
     date: "January 30th, 2021",
     courses: [
@@ -13,7 +62,7 @@ const meals = [
           image: "sea_bass_ceviche",
          },
          {
-          name: "Chile de Agua Stuffed with Tuna Ceviche, Seared Tuna with Guajillo and Dried Shrimp Mole, Kalamata Puree ",
+          name: "Chile de Agua Stuffed with Tuna Ceviche, Seared Tuna with Guajillo and Dried Shrimp Mole, Kalamata Puree",
           image: "stuffed_chile",
          },
          {
