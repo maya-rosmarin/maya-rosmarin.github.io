@@ -1,0 +1,1 @@
+console.log("Welcome to Matt & Maya's Wedding Website!"); 
